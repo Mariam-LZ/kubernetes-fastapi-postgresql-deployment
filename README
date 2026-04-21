@@ -4,51 +4,55 @@ Projet réalisé dans le cadre de la formation **DataScientest** – module **Ku
 
 ## Objectif
 
-Déployer une application conteneurisée dans un cluster Kubernetes composée de :
+Déployer une application conteneurisée sur un cluster Kubernetes composée de :
 
 - un microservice **FastAPI**
 - une base de données **PostgreSQL**
 
-Le projet devait respecter des standards de production : **scalabilité, persistance, sécurité, exposition web et administration du cluster**.
+Le projet devait répondre à des standards de production :
+
+- scalabilité
+- persistance des données
+- sécurité
+- exposition web
+- administration du cluster
 
 ---
 
-## Architecture
+## Stack technique
 
 | Composant | Technologie |
-|----------|-------------|
+|-----------|-------------|
 | Orchestrateur | Kubernetes |
 | Application | FastAPI |
 | Base de données | PostgreSQL |
 | Conteneurisation | Docker |
 | Exposition externe | Ingress |
 | Stockage | Persistent Volume Claim |
-| Secrets | Kubernetes Secrets |
 | Configuration | ConfigMaps |
+| Secrets | Kubernetes Secrets |
 | Sauvegarde cluster | ETCD Snapshot |
 
 ---
 
 ## Réalisations
 
-## Conteneurisation de l’application
+### Déploiement de l’application FastAPI
 
-- Création du **Dockerfile** du microservice FastAPI
+- Création du `Dockerfile`
 - Build de l’image applicative
-- Déploiement dans Kubernetes
-
-## Déploiement FastAPI
-
-- Création d’un **Deployment**
+- Déploiement via `Deployment`
 - Mise en place de **3 replicas**
-- Exposition via **Service Kubernetes**
-- Publication externe via **Ingress**
-- Association à un **nom de domaine personnalisé**
+- Exposition interne via `Service`
+- Publication externe via `Ingress`
+- Liaison avec un nom de domaine personnalisé
 
-## Déploiement PostgreSQL
+### Déploiement PostgreSQL
 
-- Mise en place via **StatefulSet**
-- Exposition interne avec un service nommé :
+- Mise en place via `StatefulSet`
+- Service interne nommé `db`
 
-```bash
-db
+Chaîne de connexion utilisée :
+
+```env
+postgresql://admin:password@db:5432/storedb
