@@ -1,0 +1,54 @@
+# Kubernetes — Déploiement d’une architecture microservices FastAPI & PostgreSQL
+
+Projet réalisé dans le cadre de la formation **DataScientest** – module **Kubernetes**.
+
+## Objectif
+
+Déployer une application conteneurisée dans un cluster Kubernetes composée de :
+
+- un microservice **FastAPI**
+- une base de données **PostgreSQL**
+
+Le projet devait respecter des standards de production : **scalabilité, persistance, sécurité, exposition web et administration du cluster**.
+
+---
+
+## Architecture
+
+| Composant | Technologie |
+|----------|-------------|
+| Orchestrateur | Kubernetes |
+| Application | FastAPI |
+| Base de données | PostgreSQL |
+| Conteneurisation | Docker |
+| Exposition externe | Ingress |
+| Stockage | Persistent Volume Claim |
+| Secrets | Kubernetes Secrets |
+| Configuration | ConfigMaps |
+| Sauvegarde cluster | ETCD Snapshot |
+
+---
+
+## Réalisations
+
+## Conteneurisation de l’application
+
+- Création du **Dockerfile** du microservice FastAPI
+- Build de l’image applicative
+- Déploiement dans Kubernetes
+
+## Déploiement FastAPI
+
+- Création d’un **Deployment**
+- Mise en place de **3 replicas**
+- Exposition via **Service Kubernetes**
+- Publication externe via **Ingress**
+- Association à un **nom de domaine personnalisé**
+
+## Déploiement PostgreSQL
+
+- Mise en place via **StatefulSet**
+- Exposition interne avec un service nommé :
+
+```bash
+db

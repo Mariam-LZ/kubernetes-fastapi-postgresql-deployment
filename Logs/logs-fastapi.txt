@@ -1,0 +1,20 @@
+[pod/fastapi-85d7c4bb6b-t9wqf/fastapi] INFO:     Started server process [1]
+[pod/fastapi-85d7c4bb6b-t9wqf/fastapi] INFO:     Waiting for application startup.
+[pod/fastapi-85d7c4bb6b-t9wqf/fastapi] INFO:     Application startup complete.
+[pod/fastapi-85d7c4bb6b-t9wqf/fastapi] INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+[pod/fastapi-85d7c4bb6b-t9wqf/fastapi] INFO:     10.42.0.8:41412 - "GET /docs HTTP/1.1" 200 OK
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:47212 - "GET /users HTTP/1.1" 200 OK
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:47226 - "GET /favicon.ico HTTP/1.1" 405 Method Not Allowed
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:49946 - "GET /users/count HTTP/1.1" 200 OK
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:49974 - "GET /favicon.ico HTTP/1.1" 405 Method Not Allowed
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:34848 - "GET / HTTP/1.1" 200 OK
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:34854 - "GET /favicon.ico HTTP/1.1" 405 Method Not Allowed
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:34858 - "GET / HTTP/1.1" 200 OK
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:34888 - "GET /favicon.ico HTTP/1.1" 405 Method Not Allowed
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:52274 - "GET /docs HTTP/1.1" 200 OK
+[pod/fastapi-85d7c4bb6b-vf4qj/fastapi] INFO:     127.0.0.1:52274 - "GET /openapi.json HTTP/1.1" 200 OK
+[pod/fastapi-85d7c4bb6b-xqqvz/fastapi] INFO:     Started server process [1]
+[pod/fastapi-85d7c4bb6b-xqqvz/fastapi] INFO:     Waiting for application startup.
+[pod/fastapi-85d7c4bb6b-xqqvz/fastapi] INFO:     Application startup complete.
+[pod/fastapi-85d7c4bb6b-xqqvz/fastapi] INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+[pod/fastapi-85d7c4bb6b-xqqvz/fastapi] INFO:     10.42.0.8:37392 - "GET / HTTP/1.1" 200 OK
